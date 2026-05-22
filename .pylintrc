@@ -1,0 +1,13 @@
+[MASTER]
+
+[MESSAGES CONTROL]
+# Missing module docstring
+disable=C0114,W0718
+# Max line length
+max-line-length=120
+# Allow variable names that are too short
+good-names=i,j,k,ex,Run,_
+
+[SIMILARITIES]
+# Ignore duplicate code in scripts directory (CLI argument parsing is intentionally similar)
+ignore-paths=

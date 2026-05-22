@@ -1,0 +1,32 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=25000"]
+
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check
+        entry: .venv/bin/python -m ruff check .
+        language: system
+        pass_filenames: false
+
+      - id: ruff-format-check
+        name: ruff format --check
+        entry: .venv/bin/python -m ruff format --check .
+        language: system
+        pass_filenames: false
+
+      - id: pylint
+        name: pylint
+        entry: bash -c 'PYTHONPATH=src .venv/bin/python -m pylint src'
+        language: system
+        pass_filenames: false
+
+      - id: pyright
+        name: pyright
+        entry: bash -c 'PYTHONPATH=src .venv/bin/python -m pyright src'
+        language: system
+        pass_filenames: false
