@@ -2,7 +2,7 @@
 
 [MESSAGES CONTROL]
 # Missing module docstring
-disable=C0114,W0718
+disable=C0114,W0718,C0103
 # Max line length
 max-line-length=120
 # Allow variable names that are too short
