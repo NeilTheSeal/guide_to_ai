@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "..",
+    },
+    {
+      "path": "../../ai_book",
+    },
+  ],
+  "settings": {
+    "terminal.integrated.env.osx": {
+      "PATH": "${workspaceFolder}/scripts:${env:PATH}",
+    },
+    "terminal.integrated.env.linux": {
+      "PATH": "${workspaceFolder}/scripts:${env:PATH}",
+    },
+    "ruff.enable": true,
+    "ruff.nativeServer": "auto",
+    "postman.settings.dotenv-detection-notification-visibility": false,
+  },
+}
